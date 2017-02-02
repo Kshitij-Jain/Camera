@@ -99,4 +99,8 @@ public class MainActivity extends AppCompatActivity {
         Log.d("Image Save Path", mCurrentPhotoPath);
         return image;
     }
+
+    public void videoActivityIntent(View view) {
+        startActivity(new Intent(this, VideoActivity.class));
+    }
 }
