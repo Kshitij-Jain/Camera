@@ -28,7 +28,7 @@ public class VideoActivity extends AppCompatActivity {
     // Capture a Video with the Camera App
     public void captureVideo(View view) {
         Intent intent = new Intent(ACTION_VIDEO_CAPTURE);
-        // Check if is there is any application to capture image
+        // Check if is there is any application to capture video
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(intent, REQUEST_VIDEO_CAPTURE);
         }
